@@ -48,7 +48,7 @@ async function loadProfile() {
             <div class="meta-item"><div class="meta-number">${following}</div><div class="meta-title">Following</div></div>
         </div>
         <div class="gallery">
-            ${gallery.map(img => `<img src="${img}" alt="post">`).join("")}
+            ${gallery.map(img => `<img src="${user.picture.large}" alt="post">`).join("")}
         </div>
         <div style="margin-top:11px; font-size:0.98rem; color:#444;">
           ${user.name.first} ${user.name.last} • ${user.location.city}, ${user.location.country}
