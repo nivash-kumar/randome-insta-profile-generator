@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.container {
+    max-width: 400px;
+    margin: 48px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 3px 24px rgba(0,0,0,0.10);
+    padding: 32px 24px 24px 24px;
+}
+h1 {
+    color: #262626;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+button#getProfile {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 24px;
+    background: #ee0979;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+}
+button#getProfile:hover {
+    background: #ff6a00;
+}
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ee0979;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+.insta-profile {
+    text-align: center;
+    background: #fafafa;
+    padding: 24px 8px 16px 8px;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+    margin-top: 18px;
+}
+.insta-avatar {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.11);
+    margin-bottom: 14px;
+    border: 3px solid #f09433;
+}
+.insta-username {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #262626;
+    margin: 8px 0 4px 0;
+}
+.insta-bio {
+    font-size: 0.98rem;
+    color: #555;
+    margin-bottom: 14px;
+}
+.meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 10px 0 18px 0;
+}
+.meta .meta-item {
+    text-align: center;
+}
+.meta-title {
+    font-size: 0.90rem;
+    color: #999;
+}
+.meta-number {
+    font-size: 1.11rem;
+    font-weight: bold;
+    color: #262626;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery img {
+    width: 68px;
+    height: 68px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eef0f4;
+}
+@media (max-width: 500px) {
+    .container { padding: 18px 2vw; }
+    .gallery img { width: 54px; height: 54px; }
+}
